@@ -304,9 +304,8 @@ border-radius: 50px;
 /* ===========CHECKBOX================== */
 
 .check-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
+  font-family:'FuturaPTLight' ;
+
   font-size: 12px;
   line-height: 1.33;
   display: flex;
