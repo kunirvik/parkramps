@@ -1,3 +1,22 @@
+
+  (() => {
+    const refs = {
+      openModalBtn: document.querySelector("[data-modal-open]"),
+      closeModalBtn: document.querySelector("[data-modal-close]"),
+      modal: document.querySelector("[data-modal]"),
+    };
+  
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+  
+    function toggleModal() {
+      refs.modal.classList.toggle("is-hidden");
+    }
+  })();
+
+
+
+
 var acc = document.getElementsByClassName("accordion"),
     i;
 for (i = 0; i < acc.length; i++) {
@@ -18,6 +37,13 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
+
+
+  
+
+  
+
+  
 var typed = new Typed('.typed', {
     strings: ["виробництво скейтпарків","тренування скейт|bmx|скут", "івенти та змагання", "локація для фото|відео"],
     typeSpeed: 60,
@@ -25,23 +51,3 @@ var typed = new Typed('.typed', {
     loop:true
 
   });
-
-  
-
-  (() => {
-    const refs = {
-      openModalBtn: document.querySelector("[data-modal-open]"),
-      closeModalBtn: document.querySelector("[data-modal-close]"),
-      modal: document.querySelector("[data-modal]"),
-    };
-  
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-  
-    function toggleModal() {
-      refs.modal.classList.toggle("is-hidden");
-    }
-  })();
-  
-
-  

@@ -106,7 +106,7 @@ border: 3px solid rgb(255, 255, 255);
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.966);
+  background-color: rgb(0, 0, 0);
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -115,6 +115,7 @@ border: 3px solid rgb(255, 255, 255);
 
 
 .modal {
+  margin-top: 1%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -122,7 +123,7 @@ border: 3px solid rgb(255, 255, 255);
   padding: 24px;
 border-radius: 50px;
   width: 408px;
-  min-height: 576px;
+  min-height: 578px;
   background: #82d660;
   background-image: url(../img/noname.jpg);
 
@@ -190,7 +191,8 @@ border-radius: 50px;
  
 
   text-align: center;
-  
+  margin-top: 24px;
+  margin-bottom: 34px;
 
   color: var(--dark-color);
   margin-top: 24px;
@@ -344,7 +346,6 @@ border-radius: 50px;
 
 
 
-
 .header {
   background-color: black;
   display: flex;
@@ -365,12 +366,11 @@ justify-content: space-between;
  
 .header_logo{
   display: flex;
- padding: 0 0 17px 15px;
+ height: 75px;
+ padding: 0 0 0 22px;
   
-  font-size: 75px;
-  color: white;
-  font-family: 'Futura PT Bold';
-  align-items: center;
+  
+ 
   
 }
 
@@ -398,7 +398,7 @@ justify-content: space-between;
       height: 71px;
       font-family:'FuturaPTMedium';
       background-color: rgba(28,28,28,0);
-      
+      letter-spacing: -0.04em;
       color: rgb(255, 255, 255);
       
       cursor: pointer;
@@ -407,11 +407,12 @@ border-radius: 20px;
 border-width:3.5px ;
 border-color:white ;   
 
-      transition: 1s;
+transition: all 1s ease-out;
       display: flex;
       align-items: center;
       padding: 0 0 17px 10px;
       margin: 3px 7px 0 7px;
+
   
   }
 
@@ -425,6 +426,7 @@ border-color:white ;
   button.accordion.active,
   button.accordion:hover {
     background-color: rgba(255, 255, 255, 0.521);
+    transition: all 1s ease-out;
     
       
       color: white;
@@ -549,11 +551,14 @@ align-items: center;
       height: auto;
       background: rgba(0, 0, 0, 0);
       display: none;
+      transition: all 1s ease-out;
+      
   }
   
   div.panel.show {
       display: block;
       background: rgba(0, 0, 0, 0);
+      
   }
 
 
@@ -632,8 +637,8 @@ span.typed {
 
 @media(max-width:480px){
   .header_logo{
-    padding: 0 0 0 5px;
-    height: 50px;
+    padding: 8px 0 0 10px;
+    height: 38px;
   }
   .logo_accordion2{
     height: 50px;
@@ -649,14 +654,34 @@ span.typed {
     height: 30px;
   }
   button.accordion{
-    height: 35px;
-    font-size: 30px;
+    height: 50px;
+    font-size: 38px;
     margin: 0;
-    padding: 0 0 0 5px;}
-  span.typed{
-    font-size: 30px;
+    padding: 0 0 10px 5px;
   }
+  span.typed{
+    font-size: 38px;
+  }
+  .button-hero{
+    width: 38px;
+    height: 38px;
+    align-items: center;
+
+
+ 
+  }
+
+  .modal{
+    height: 200px;
+    width: 200px;
+  }
+ .input-wrap{
+  width: 100px;
+ }
+
 }
+
+
 
 
 .photo_location1{
