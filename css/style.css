@@ -623,7 +623,7 @@ flex-wrap: wrap;
   position: relative;
   margin: 0 -35px;
   width: calc(100% / 14 + 70px); /* 5 - кол-во фотографий */
-  transition: width 0.5s ease-in;
+  transition: width 0.7s ease-in;
 }
 .banner-container li a {
   display: block;
@@ -641,7 +641,8 @@ flex-wrap: wrap;
 
 .banner-container ul li:hover {
   width: 40%;
-  filter: none;
+  delay:0.4s
+ 
 }    
 .banner-container ul li:hover a img {
   opacity: 1;
